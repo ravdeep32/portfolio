@@ -1,0 +1,1111 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shiv Kumar Batalvi | ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ</title>
+
+    <meta name="description"
+          content="Explore the life, poetry, biography and legacy of Punjabi poet Shiv Kumar Batalvi in English and Punjabi.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --dark: #211b19;
+            --brown: #65402e;
+            --gold: #d7a64a;
+            --cream: #fff9ef;
+            --light: #f0e4d3;
+            --white: #ffffff;
+            --text: #332b27;
+        }
+
+        body {
+            font-family: Georgia, "Noto Sans Gurmukhi",
+                         "Raavi", "Nirmala UI", serif;
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 16px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            color: var(--gold);
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 40px;
+            padding: 65px 8%;
+            min-height: 570px;
+            background: linear-gradient(135deg, #f0dfc4, #fff9ef);
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .eyebrow {
+            color: #86592d;
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(38px, 5vw, 64px);
+            line-height: 1.2;
+            margin: 12px 0;
+        }
+
+        .punjabi-heading {
+            color: var(--brown);
+            font-size: clamp(27px, 4vw, 40px);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--brown);
+            color: white;
+            padding: 11px 23px;
+            border: 0;
+            border-radius: 5px;
+            margin: 8px 8px 0 0;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #8a5c3d;
+        }
+
+        .hero-image {
+            width: 330px;
+            height: 430px;
+            object-fit: cover;
+            object-position: center 25%;
+            border: 8px solid white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px #0003;
+        }
+
+        section {
+            padding: 68px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 38px;
+            color: #6a5a4e;
+            font-size: 17px;
+        }
+
+        .punjabi-line {
+            display: block;
+            color: #805638;
+            font-size: 19px;
+            margin-top: 4px;
+        }
+
+        .about {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about p {
+            margin: 0 0 20px;
+            font-size: 17px;
+        }
+
+        .about strong {
+            color: #80502f;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 8px;
+            padding: 26px;
+            box-shadow: 0 5px 18px #0000000c;
+        }
+
+        .info-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: var(--brown);
+        }
+
+        .info-card p {
+            margin-bottom: 10px;
+        }
+
+        .timeline-section,
+        .books-section,
+        .achievements {
+            background: var(--light);
+        }
+
+        .timeline {
+            max-width: 850px;
+            margin: 35px auto 0;
+            border-left: 3px solid var(--gold);
+            padding-left: 28px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -37px;
+            top: 9px;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            background: var(--gold);
+        }
+
+        .timeline-item h3 {
+            color: var(--brown);
+            font-size: 22px;
+        }
+
+        .timeline-item p {
+            margin-top: 5px;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .book-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 18px #0000000c;
+            transition: transform 0.2s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .book-icon {
+            font-size: 36px;
+        }
+
+        .book-card h3 {
+            color: var(--brown);
+            margin: 8px 0;
+            font-size: 21px;
+        }
+
+        .book-card p {
+            margin-bottom: 10px;
+        }
+
+        .poetry-section {
+            background: #fffaf3;
+        }
+
+        .poetry-card {
+            max-width: 850px;
+            margin: 22px auto;
+            padding: 30px;
+            background: white;
+            border-left: 5px solid var(--gold);
+            box-shadow: 0 5px 18px #0000000d;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .poetry-card h3 {
+            color: var(--brown);
+            margin-bottom: 10px;
+        }
+
+        .poetry-card p {
+            font-size: 21px;
+            line-height: 1.9;
+        }
+
+        .poetry-card small {
+            display: block;
+            color: #776354;
+            margin-top: 12px;
+        }
+
+        .quote-section {
+            background: var(--brown);
+            color: white;
+            text-align: center;
+        }
+
+        .quote-section .section-title {
+            color: white;
+        }
+
+        .quote-section .section-intro {
+            color: #f3e4d7;
+        }
+
+        #quoteText {
+            max-width: 850px;
+            min-height: 100px;
+            margin: 25px auto;
+            font-size: 23px;
+        }
+
+        .quote-section .btn {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .gallery-grid figure {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px #0002;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            object-position: center 25%;
+            display: block;
+        }
+
+        .gallery-grid figcaption {
+            padding: 12px;
+            text-align: center;
+        }
+
+        .gallery-note {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 22px;
+        }
+
+        .gallery-note a {
+            color: #80502f;
+            text-decoration: underline;
+        }
+
+        .legacy {
+            background: var(--light);
+            text-align: center;
+        }
+
+        .legacy p {
+            max-width: 850px;
+            margin: 15px auto;
+            font-size: 18px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px auto;
+            max-width: 800px;
+        }
+
+        footer {
+            background: var(--dark);
+            color: #f7e8d5;
+            text-align: center;
+            padding: 28px 7%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .back-top {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 44px;
+            height: 44px;
+            background: var(--gold);
+            color: var(--dark);
+            border: none;
+            border-radius: 50%;
+            font-size: 21px;
+            cursor: pointer;
+            box-shadow: 0 3px 10px #0002;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 45px 6%;
+            }
+
+            .hero-image {
+                width: 280px;
+                height: 360px;
+            }
+
+            section {
+                padding: 48px 6%;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 430px) {
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero-image {
+                width: 240px;
+                height: 310px;
+            }
+
+            .poetry-card {
+                padding: 22px 14px;
+            }
+
+            .poetry-card p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#biography">Biography</a>
+        <a href="#life">Life</a>
+        <a href="#books">Books</a>
+        <a href="#poetry">Poetry</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#legacy">Legacy</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <span class="eyebrow">The Voice of Punjabi Poetry</span>
+
+            <h1>Shiv Kumar Batalvi</h1>
+            <h2 class="punjabi-heading">ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ</h2>
+
+            <p>
+                The legendary Punjabi poet remembered as
+                <strong>Birha Da Sultan</strong>.
+            </p>
+
+            <p>
+                ਬਿਰਹਾ ਦਾ ਸੁਲਤਾਨ — ਪੰਜਾਬੀ ਸਾਹਿਤ ਦਾ ਉਹ ਮਹਾਨ ਕਵੀ,
+                ਜਿਸ ਦੀਆਂ ਰਚਨਾਵਾਂ ਪਿਆਰ, ਵਿਛੋੜੇ ਅਤੇ ਦਰਦ ਦੀ ਗੱਲ ਕਰਦੀਆਂ ਹਨ।
+            </p>
+
+            <a href="#biography" class="btn">Explore His Life</a>
+            <a href="#poetry" class="btn">ਪੰਜਾਬੀ ਕਵਿਤਾ</a>
+        </div>
+
+        <img
+            class="hero-image"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Shiv_Kumar_Batalvi%2C_1970.jpg"
+            alt="Shiv Kumar Batalvi, 1970 portrait"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Shiv_Kumar_in_Southall_1971.jpg';"
+        >
+
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section id="biography">
+
+        <h2 class="section-title">
+            Biography | ਜੀਵਨੀ
+        </h2>
+
+        <p class="section-intro">
+            Discover the life of a poet whose words touched generations.
+            <span class="punjabi-line">
+                ਇੱਕ ਅਜਿਹੇ ਕਵੀ ਦੀ ਜ਼ਿੰਦਗੀ, ਜਿਸ ਦੇ ਸ਼ਬਦਾਂ ਨੇ ਕਈ ਪੀੜ੍ਹੀਆਂ
+                ਦੇ ਦਿਲਾਂ ਨੂੰ ਛੂਹਿਆ।
+            </span>
+        </p>
+
+        <div class="about">
+
+            <p>
+                <strong>Shiv Kumar Batalvi</strong> was one of the most
+                celebrated poets in Punjabi literature. He was born on
+                23 July 1936 in Bara Pind Lohtian, a village in the Punjab
+                region that is now in Pakistan.
+            </p>
+
+            <p>
+                ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ ਦਾ ਜਨਮ 23 ਜੁਲਾਈ 1936 ਨੂੰ ਬਾਰਾ ਪਿੰਡ
+                ਲੋਹਟੀਆਂ ਵਿੱਚ ਹੋਇਆ। ਉਹ ਪੰਜਾਬੀ ਸਾਹਿਤ ਦੇ ਸਭ ਤੋਂ ਪਿਆਰੇ
+                ਅਤੇ ਪ੍ਰਸਿੱਧ ਕਵੀਆਂ ਵਿੱਚੋਂ ਇੱਕ ਸਨ।
+            </p>
+
+            <p>
+                Following the Partition of India in 1947, his family
+                moved to the Indian side of Punjab. His life, surroundings
+                and experiences helped shape his connection with Punjabi
+                culture and literature.
+            </p>
+
+            <p>
+                1947 ਦੀ ਵੰਡ ਤੋਂ ਬਾਅਦ ਉਨ੍ਹਾਂ ਦਾ ਪਰਿਵਾਰ ਭਾਰਤ ਆ ਗਿਆ।
+                ਪੰਜਾਬ ਦੀ ਮਿੱਟੀ, ਲੋਕ-ਜੀਵਨ ਅਤੇ ਸੱਭਿਆਚਾਰ ਨੇ ਉਨ੍ਹਾਂ ਦੀ
+                ਲਿਖਤ ਨੂੰ ਡੂੰਘਾ ਪ੍ਰਭਾਵਿਤ ਕੀਤਾ।
+            </p>
+
+            <p>
+                His poetry is known for its emotional intensity and
+                its themes of love, loss, longing, heartbreak and
+                separation. His writing often feels musical and deeply
+                personal.
+            </p>
+
+            <p>
+                ਉਨ੍ਹਾਂ ਦੀਆਂ ਕਵਿਤਾਵਾਂ ਵਿੱਚ ਪਿਆਰ, ਵਿਛੋੜਾ, ਉਦਾਸੀ ਅਤੇ
+                ਮਨੁੱਖੀ ਜਜ਼ਬਾਤਾਂ ਦੀ ਡੂੰਘੀ ਝਲਕ ਮਿਲਦੀ ਹੈ। ਉਨ੍ਹਾਂ ਦੇ
+                ਸ਼ਬਦਾਂ ਵਿੱਚ ਸੰਗੀਤ ਵਰਗੀ ਮਿਠਾਸ ਅਤੇ ਦਿਲ ਨੂੰ ਛੂਹਣ ਵਾਲੀ
+                ਭਾਵਨਾ ਸੀ।
+            </p>
+
+            <p>
+                In 1967, he received the Sahitya Akademi Award for
+                his verse play <em>Loona</em>. His poetry continues
+                to be read, sung and celebrated today.
+            </p>
+
+            <p>
+                1967 ਵਿੱਚ ਉਨ੍ਹਾਂ ਨੂੰ ਆਪਣੀ ਕਾਵਿ-ਨਾਟਕ ਰਚਨਾ
+                <strong>ਲੂਣਾ</strong> ਲਈ ਸਾਹਿਤ ਅਕਾਦਮੀ ਪੁਰਸਕਾਰ ਮਿਲਿਆ।
+                ਅੱਜ ਵੀ ਉਨ੍ਹਾਂ ਦੀਆਂ ਰਚਨਾਵਾਂ ਪੰਜਾਬੀ ਪਾਠਕਾਂ ਅਤੇ ਸੰਗੀਤ
+                ਪ੍ਰੇਮੀਆਂ ਦੇ ਦਿਲਾਂ ਵਿੱਚ ਵੱਸਦੀਆਂ ਹਨ।
+            </p>
+
+        </div>
+    </section>
+
+    <!-- PERSONALITY AND STYLE -->
+    <section class="books-section">
+
+        <h2 class="section-title">
+            His Personality & Poetry | ਸ਼ਖ਼ਸੀਅਤ ਅਤੇ ਕਵਿਤਾ
+        </h2>
+
+        <p class="section-intro">
+            What made Shiv Kumar Batalvi a unique voice in Punjabi poetry?
+            <span class="punjabi-line">
+                ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ ਦੀ ਕਵਿਤਾ ਨੂੰ ਵਿਲੱਖਣ ਬਣਾਉਣ ਵਾਲੀਆਂ ਗੱਲਾਂ।
+            </span>
+        </p>
+
+        <div class="two-columns">
+
+            <article class="info-card">
+                <h3>Emotional Depth</h3>
+                <p>
+                    His poetry expressed emotions that people often find
+                    difficult to put into words.
+                </p>
+                <p>
+                    ਉਨ੍ਹਾਂ ਦੀ ਕਵਿਤਾ ਉਹਨਾਂ ਜਜ਼ਬਾਤਾਂ ਨੂੰ ਬਿਆਨ ਕਰਦੀ ਹੈ,
+                    ਜਿਨ੍ਹਾਂ ਨੂੰ ਸ਼ਬਦਾਂ ਵਿੱਚ ਕਹਿਣਾ ਔਖਾ ਹੁੰਦਾ ਹੈ।
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>Musical Language</h3>
+                <p>
+                    His words and rhythm made many of his compositions
+                    memorable in recitation and song.
+                </p>
+                <p>
+                    ਉਨ੍ਹਾਂ ਦੀ ਭਾਸ਼ਾ ਅਤੇ ਲੈਅ ਨੇ ਉਨ੍ਹਾਂ ਦੀਆਂ ਰਚਨਾਵਾਂ ਨੂੰ
+                    ਗੀਤਾਂ ਅਤੇ ਕਾਵਿ-ਪਾਠ ਵਿੱਚ ਖ਼ਾਸ ਪਛਾਣ ਦਿੱਤੀ।
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>Love and Separation</h3>
+                <p>
+                    Love, longing and separation are central themes
+                    in much of his literary work.
+                </p>
+                <p>
+                    ਪਿਆਰ, ਤਾਂਘ ਅਤੇ ਵਿਛੋੜਾ ਉਨ੍ਹਾਂ ਦੀ ਕਵਿਤਾ ਦੇ
+                    ਮੁੱਖ ਵਿਸ਼ਿਆਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹਨ।
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>Punjabi Culture</h3>
+                <p>
+                    His writing remains an important part of the
+                    cultural memory of Punjabi readers.
+                </p>
+                <p>
+                    ਉਨ੍ਹਾਂ ਦੀਆਂ ਰਚਨਾਵਾਂ ਪੰਜਾਬੀ ਬੋਲੀ, ਸੱਭਿਆਚਾਰ
+                    ਅਤੇ ਸਾਹਿਤਕ ਵਿਰਸੇ ਦੀ ਅਹਿਮ ਪਹਿਚਾਣ ਹਨ।
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline-section" id="life">
+
+        <h2 class="section-title">
+            Life Timeline | ਜੀਵਨ ਯਾਤਰਾ
+        </h2>
+
+        <p class="section-intro">
+            Important milestones in his life.
+            <span class="punjabi-line">ਉਨ੍ਹਾਂ ਦੇ ਜੀਵਨ ਦੇ ਅਹਿਮ ਪੜਾਅ।</span>
+        </p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>1936 — Birth | ਜਨਮ</h3>
+                <p>
+                    Shiv Kumar Batalvi was born on 23 July in
+                    Bara Pind Lohtian.
+                </p>
+                <p>
+                    23 ਜੁਲਾਈ 1936 ਨੂੰ ਉਨ੍ਹਾਂ ਦਾ ਜਨਮ ਪੰਜਾਬ ਖੇਤਰ ਦੇ
+                    ਬਾਰਾ ਪਿੰਡ ਲੋਹਟੀਆਂ ਵਿੱਚ ਹੋਇਆ।
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>1947 — Partition | ਦੇਸ਼ ਦੀ ਵੰਡ</h3>
+                <p>
+                    His family moved to India during the Partition
+                    of the subcontinent.
+                </p>
+                <p>
+                    ਦੇਸ਼ ਦੀ ਵੰਡ ਸਮੇਂ ਉਨ੍ਹਾਂ ਦਾ ਪਰਿਵਾਰ ਭਾਰਤ ਆ ਗਿਆ।
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Literary Journey | ਸਾਹਿਤਕ ਸਫ਼ਰ</h3>
+                <p>
+                    He became known for his expressive Punjabi poetry
+                    and distinctive literary voice.
+                </p>
+                <p>
+                    ਉਨ੍ਹਾਂ ਨੇ ਆਪਣੀਆਂ ਭਾਵਪੂਰਨ ਕਵਿਤਾਵਾਂ ਰਾਹੀਂ ਪੰਜਾਬੀ
+                    ਸਾਹਿਤ ਵਿੱਚ ਵੱਖਰੀ ਪਛਾਣ ਬਣਾਈ।
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>1967 — Sahitya Akademi Award</h3>
+                <p>
+                    He received the award for his verse play
+                    <em>Loona</em>.
+                </p>
+                <p>
+                    ਉਨ੍ਹਾਂ ਦੀ ਰਚਨਾ <strong>ਲੂਣਾ</strong> ਨੂੰ
+                    ਸਾਹਿਤ ਅਕਾਦਮੀ ਪੁਰਸਕਾਰ ਨਾਲ ਸਨਮਾਨਿਤ ਕੀਤਾ ਗਿਆ।
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>1973 — Passing | ਵਿਛੋੜਾ</h3>
+                <p>
+                    He passed away on 6 May 1973, aged 36.
+                </p>
+                <p>
+                    6 ਮਈ 1973 ਨੂੰ 36 ਸਾਲ ਦੀ ਉਮਰ ਵਿੱਚ ਉਹ ਇਸ ਦੁਨੀਆ
+                    ਤੋਂ ਰੁਖ਼ਸਤ ਹੋ ਗਏ, ਪਰ ਉਨ੍ਹਾਂ ਦੀ ਕਵਿਤਾ ਅੱਜ ਵੀ ਜ਼ਿੰਦਾ ਹੈ।
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOOKS -->
+    <section id="books">
+
+        <h2 class="section-title">
+            Famous Works | ਪ੍ਰਸਿੱਧ ਰਚਨਾਵਾਂ
+        </h2>
+
+        <p class="section-intro">
+            A selection of well-known works associated with the poet.
+            <span class="punjabi-line">
+                ਕਵੀ ਦੀਆਂ ਕੁਝ ਪ੍ਰਸਿੱਧ ਸਾਹਿਤਕ ਰਚਨਾਵਾਂ।
+            </span>
+        </p>
+
+        <div class="book-grid">
+
+            <article class="book-card">
+                <div class="book-icon">📖</div>
+                <h3>Loona | ਲੂਣਾ</h3>
+                <p>
+                    A celebrated verse play inspired by the traditional
+                    story of Puran Bhagat and Loona.
+                </p>
+                <p>
+                    ਪੂਰਨ ਭਗਤ ਅਤੇ ਲੂਣਾ ਦੀ ਲੋਕ-ਕਥਾ ਨਾਲ ਸੰਬੰਧਿਤ
+                    ਪ੍ਰਸਿੱਧ ਕਾਵਿ-ਨਾਟਕ।
+                </p>
+            </article>
+
+            <article class="book-card">
+                <div class="book-icon">📚</div>
+                <h3>Birha Tu Sultan</h3>
+                <p>
+                    A title closely associated with his exploration
+                    of separation and longing.
+                </p>
+                <p>
+                    ਬਿਰਹੇ, ਤਾਂਘ ਅਤੇ ਵਿਛੋੜੇ ਦੀ ਭਾਵਨਾ ਨਾਲ ਜੁੜਿਆ
+                    ਇੱਕ ਯਾਦਗਾਰ ਸਿਰਲੇਖ।
+                </p>
+            </article>
+
+            <article class="book-card">
+                <div class="book-icon">🌹</div>
+                <h3>Peeran Da Paraga</h3>
+                <p>
+                    One of the recognised titles in his poetic legacy.
+                </p>
+                <p>
+                    ਉਨ੍ਹਾਂ ਦੀ ਕਾਵਿ-ਯਾਤਰਾ ਨਾਲ ਜੁੜੀ ਇੱਕ ਜਾਣੀ-ਪਛਾਣੀ ਰਚਨਾ।
+                </p>
+            </article>
+
+            <article class="book-card">
+                <div class="book-icon">🖋️</div>
+                <h3>Main Te Main</h3>
+                <p>
+                    A title associated with his distinctive literary
+                    contribution to Punjabi poetry.
+                </p>
+                <p>
+                    ਪੰਜਾਬੀ ਕਵਿਤਾ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦੀ ਸਾਹਿਤਕ ਦੇਣ ਨਾਲ
+                    ਜੁੜਿਆ ਇੱਕ ਹੋਰ ਸਿਰਲੇਖ।
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- POETRY -->
+    <section class="poetry-section" id="poetry">
+
+        <h2 class="section-title">
+            Punjabi Poetry | ਪੰਜਾਬੀ ਕਵਿਤਾ
+        </h2>
+
+        <p class="section-intro">
+            His poetry continues to inspire readers through its
+            emotional depth and musical quality.
+            <span class="punjabi-line">
+                ਉਨ੍ਹਾਂ ਦੀ ਕਵਿਤਾ ਆਪਣੇ ਜਜ਼ਬਾਤਾਂ ਅਤੇ ਮਿਠਾਸ ਨਾਲ
+                ਅੱਜ ਵੀ ਪਾਠਕਾਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ।
+            </span>
+        </p>
+
+        <div class="poetry-card">
+            <h3>A Famous Literary Phrase</h3>
+            <p>ਬਿਰਹਾ ਤੂੰ ਸੁਲਤਾਨ</p>
+            <small>
+                Birha Tu Sultan — a phrase strongly associated
+                with Shiv Kumar Batalvi.
+            </small>
+        </div>
+
+        <div class="poetry-card">
+            <h3>On His Literary Legacy | ਸਾਹਿਤਕ ਵਿਰਸਾ</h3>
+            <p>
+                ਪਿਆਰ, ਵਿਛੋੜਾ, ਯਾਦਾਂ ਅਤੇ ਜਜ਼ਬਾਤ —
+                ਇਹੀ ਉਨ੍ਹਾਂ ਦੀ ਕਵਿਤਾ ਦੀ ਰੂਹ ਹਨ।
+            </p>
+            <small>
+                Original descriptive lines written for this website,
+                not a quotation from the poet.
+            </small>
+        </div>
+
+        <div class="poetry-card">
+            <h3>A Tribute | ਇੱਕ ਸ਼ਰਧਾਂਜਲੀ</h3>
+            <p>
+                ਪੰਜਾਬੀ ਬੋਲੀ ਦਾ ਮਾਣ, ਸਾਹਿਤ ਦੀ ਪਹਿਚਾਣ,
+                ਸ਼ਿਵ ਦੀ ਕਲਮ ਰਹੇਗੀ ਸਦਾ ਯਾਦਗਾਰ।
+            </p>
+            <small>
+                Original tribute written for this website.
+            </small>
+        </div>
+
+    </section>
+
+    <!-- INTERACTIVE QUOTES -->
+    <section class="quote-section">
+
+        <h2 class="section-title">
+            Words to Remember | ਯਾਦਗਾਰੀ ਵਿਚਾਰ
+        </h2>
+
+        <p class="section-intro">
+            Reflections inspired by the themes of Punjabi poetry.
+            <span class="punjabi-line">
+                ਪੰਜਾਬੀ ਕਵਿਤਾ ਦੇ ਵਿਸ਼ਿਆਂ ਤੋਂ ਪ੍ਰੇਰਿਤ ਕੁਝ ਵਿਚਾਰ।
+            </span>
+        </p>
+
+        <p id="quoteText" aria-live="polite">
+            ਪੰਜਾਬੀ ਸਾਹਿਤ ਸਾਡੀ ਮਾਂ ਬੋਲੀ ਅਤੇ ਸੱਭਿਆਚਾਰ ਦੀ ਅਨਮੋਲ ਧਰੋਹਰ ਹੈ।
+        </p>
+
+        <button class="btn" id="quoteButton" type="button">
+            Show Another | ਹੋਰ ਵਿਚਾਰ
+        </button>
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements">
+
+        <h2 class="section-title">
+            Achievements | ਪ੍ਰਾਪਤੀਆਂ
+        </h2>
+
+        <p class="section-intro">
+            His contribution to literature remains memorable.
+            <span class="punjabi-line">
+                ਸਾਹਿਤ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦਾ ਯੋਗਦਾਨ ਸਦਾ ਯਾਦ ਰੱਖਿਆ ਜਾਵੇਗਾ।
+            </span>
+        </p>
+
+        <div class="two-columns">
+
+            <article class="info-card">
+                <h3>Sahitya Akademi Award — 1967</h3>
+                <p>
+                    The award recognised his verse play
+                    <em>Loona</em>, a major work in Punjabi literature.
+                </p>
+                <p>
+                    1967 ਵਿੱਚ <strong>ਲੂਣਾ</strong> ਲਈ ਮਿਲਿਆ ਸਾਹਿਤ
+                    ਅਕਾਦਮੀ ਪੁਰਸਕਾਰ ਉਨ੍ਹਾਂ ਦੀਆਂ ਵੱਡੀਆਂ ਪ੍ਰਾਪਤੀਆਂ ਵਿੱਚੋਂ
+                    ਇੱਕ ਸੀ।
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>A Lasting Literary Voice</h3>
+                <p>
+                    His poetry continues to be recited, discussed
+                    and performed by Punjabi artists and readers.
+                </p>
+                <p>
+                    ਉਨ੍ਹਾਂ ਦੀਆਂ ਰਚਨਾਵਾਂ ਅੱਜ ਵੀ ਗਾਈਆਂ, ਪੜ੍ਹੀਆਂ ਅਤੇ
+                    ਕਾਵਿ-ਪਾਠ ਰਾਹੀਂ ਸੁਣਾਈਆਂ ਜਾਂਦੀਆਂ ਹਨ।
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+
+        <h2 class="section-title">
+            Photo Gallery | ਤਸਵੀਰਾਂ
+        </h2>
+
+        <p class="section-intro">
+            Photographs of the poet from different periods.
+            <span class="punjabi-line">
+                ਕਵੀ ਦੀਆਂ ਵੱਖ-ਵੱਖ ਸਮਿਆਂ ਦੀਆਂ ਤਸਵੀਰਾਂ।
+            </span>
+        </p>
+
+        <div class="gallery-grid">
+
+            <figure>
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Shiv_Kumar_Batalvi%2C_1970.jpg"
+                    alt="Shiv Kumar Batalvi in 1970"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Shiv Kumar Batalvi, 1970
+                    <br>ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Shiv_Kumar_in_Southall_1971.jpg"
+                    alt="Shiv Kumar Batalvi in Southall, 1971"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Southall, 1971
+                    <br>ਸਾਊਥਹਾਲ, 1971
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Shiv_Kumar-.jpg"
+                    alt="Photograph of Shiv Kumar Batalvi"
+                    loading="lazy"
+                >
+                <figcaption>
+                    A Poet Remembered
+                    <br>ਯਾਦਾਂ ਵਿੱਚ ਵੱਸਦਾ ਕਵੀ
+                </figcaption>
+            </figure>
+
+        </div>
+
+        <p class="gallery-note">
+            Images:
+            <a href="https://commons.wikimedia.org/wiki/File:Shiv_Kumar_Batalvi,_1970.jpg"
+               target="_blank" rel="noopener noreferrer">1970 portrait</a>
+            |
+            <a href="https://commons.wikimedia.org/wiki/File:Shiv_Kumar_in_Southall_1971.jpg"
+               target="_blank" rel="noopener noreferrer">Southall, 1971</a>
+            |
+            <a href="https://commons.wikimedia.org/wiki/File:Shiv_Kumar-.jpg"
+               target="_blank" rel="noopener noreferrer">Additional photo</a>.
+            Check each file page for licence and attribution details.
+        </p>
+
+    </section>
+
+    <!-- LEGACY -->
+    <section class="legacy" id="legacy">
+
+        <h2 class="section-title">
+            His Legacy | ਉਨ੍ਹਾਂ ਦਾ ਵਿਰਸਾ
+        </h2>
+
+        <p>
+            Shiv Kumar Batalvi left behind a lasting contribution
+            to Punjabi literature. His words continue to connect
+            people through emotion, music and memory.
+        </p>
+
+        <p>
+            ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ ਨੇ ਪੰਜਾਬੀ ਸਾਹਿਤ ਨੂੰ ਅਨਮੋਲ ਦੇਣ ਦਿੱਤੀ।
+            ਉਨ੍ਹਾਂ ਦੇ ਸ਼ਬਦ ਅੱਜ ਵੀ ਪਿਆਰ, ਦਰਦ ਅਤੇ ਯਾਦਾਂ ਰਾਹੀਂ ਲੋਕਾਂ
+            ਦੇ ਦਿਲਾਂ ਨਾਲ ਜੁੜਦੇ ਹਨ।
+        </p>
+
+        <p>
+            His life was short, but his literary voice continues
+            to live across generations.
+        </p>
+
+        <p>
+            ਉਨ੍ਹਾਂ ਦੀ ਜ਼ਿੰਦਗੀ ਭਾਵੇਂ ਛੋਟੀ ਸੀ, ਪਰ ਉਨ੍ਹਾਂ ਦੀ ਕਵਿਤਾ
+            ਦਾ ਸਫ਼ਰ ਪੀੜ੍ਹੀ ਦਰ ਪੀੜ੍ਹੀ ਜਾਰੀ ਹੈ।
+        </p>
+
+    </section>
+
+    <!-- ABOUT THIS WEBSITE -->
+    <section class="contact">
+
+        <h2 class="section-title">
+            About This Website | ਵੈੱਬਸਾਈਟ ਬਾਰੇ
+        </h2>
+
+        <p>
+            This website is a student-style tribute to Shiv Kumar Batalvi,
+            created using HTML, CSS and JavaScript.
+        </p>
+
+        <p>
+            ਇਹ ਵੈੱਬਸਾਈਟ ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ ਨੂੰ ਸਮਰਪਿਤ ਇੱਕ ਜਾਣਕਾਰੀ ਭਰਪੂਰ
+            ਪ੍ਰੋਜੈਕਟ ਹੈ, ਜੋ HTML, CSS ਅਤੇ JavaScript ਨਾਲ ਬਣਾਇਆ ਗਿਆ ਹੈ।
+        </p>
+
+        <a class="btn" href="#home">Back to Home | ਮੁੱਖ ਪੰਨੇ 'ਤੇ ਜਾਓ</a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p><strong>Shiv Kumar Batalvi | ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ</strong></p>
+    <p>The Birha Da Sultan | ਬਿਰਹਾ ਦਾ ਸੁਲਤਾਨ</p>
+    <p>A Tribute to Punjabi Literature | ਪੰਜਾਬੀ ਸਾਹਿਤ ਨੂੰ ਸਮਰਪਿਤ</p>
+    <p>Created with HTML, CSS & JavaScript</p>
+</footer>
+
+<button
+    class="back-top"
+    id="backTop"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+>↑</button>
+
+<script>
+    // English and Punjabi reflections for the interactive button.
+    // These are original reflections, not quotations from the poet.
+
+    const reflections = [
+        "ਪੰਜਾਬੀ ਸਾਹਿਤ ਸਾਡੀ ਮਾਂ ਬੋਲੀ ਅਤੇ ਸੱਭਿਆਚਾਰ ਦੀ ਅਨਮੋਲ ਧਰੋਹਰ ਹੈ।",
+
+        "Great poetry keeps emotions and memories alive.",
+
+        "ਪਿਆਰ ਅਤੇ ਵਿਛੋੜਾ ਮਨੁੱਖੀ ਜ਼ਿੰਦਗੀ ਦੇ ਡੂੰਘੇ ਜਜ਼ਬਾਤ ਹਨ।",
+
+        "The beauty of poetry lies in the feelings it awakens.",
+
+        "ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ ਦੀ ਸਾਹਿਤਕ ਦੇਣ ਪੰਜਾਬੀ ਜਗਤ ਲਈ ਮਾਣ ਹੈ।",
+
+        "A poet may leave this world, but the words can remain.",
+
+        "ਮਾਂ ਬੋਲੀ ਪੰਜਾਬੀ ਨਾਲ ਪਿਆਰ ਕਰਨਾ ਸਾਡਾ ਮਾਣ ਹੈ।",
+
+        "Literature connects generations through language and emotion."
+    ];
+
+    let quoteIndex = 0;
+
+    const quoteText = document.getElementById("quoteText");
+    const quoteButton = document.getElementById("quoteButton");
+
+    quoteButton.addEventListener("click", function () {
+        quoteIndex = (quoteIndex + 1) % reflections.length;
+        quoteText.textContent = reflections[quoteIndex];
+    });
+
+    // Back-to-top button
+    document.getElementById("backTop").addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>
